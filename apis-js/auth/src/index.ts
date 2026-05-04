@@ -11,6 +11,7 @@ connectDB();
 
 // initialize application
 const app: Application = express();
+app.use(express.json());
 
 // initialize routes
 app.use("/api/auth", authRouter);
